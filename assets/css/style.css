@@ -18,18 +18,13 @@
 }
 
 body {
-  background-color: var(--dark-gray);
   font-family: "Roboto", sans-serif;
-}
-
-header,
-main,
-footer {
-  background-color: var(--light-gray);
+  background-color: var(--white);
 }
 
 header {
   height: 662px;
+  border-bottom: 5px solid var(--light-gray);
 }
 
 .header-container {
@@ -42,6 +37,12 @@ header {
   text-decoration: none;
   font-size: 14px;
   margin-right: 20px;
+  cursor: default;
+}
+
+.header-container nav a:hover {
+  color: #5c917e;
+  cursor: default;
 }
 
 .header-container section {
@@ -59,4 +60,141 @@ header {
   width: 600px;
   font-size: 50px;
   font-weight: 350;
+}
+
+.social-media-icons {
+  margin-top: 50px;
+}
+
+.social-media-icons img {
+  display: block;
+  height: 20px;
+  margin-right: 0;
+  margin-left: auto;
+  margin-bottom: 6px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  transition: opacity 0.15s ease;
+}
+
+.social-media-icons img:hover {
+  opacity: 0.6;
+}
+
+.browse-topics {
+  margin-top: 80px;
+  text-decoration: none;
+  color: var(--dark-gray);
+  cursor: default;
+}
+
+.browse-topics:hover {
+  color: #4d4d4d;
+  cursor: default;
+}
+
+.main-struggle,
+.main-resources {
+  padding-left: 100px;
+  padding-right: 100px;
+  border-bottom: 5px solid var(--light-gray);
+}
+
+.main-struggle h2,
+.main-resources h2 {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.main-struggle p {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+
+.main-struggle section {
+  height: 698px;
+}
+
+.struggle-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 52px;
+  margin: 0 auto;
+  max-width: fit-content;
+}
+
+.struggle-images img {
+  display: block;
+}
+
+.resources-list {
+  margin-top: 80px;
+}
+
+.resources-list article {
+  margin-bottom: 80px;
+}
+
+.resource-left {
+  margin-left: 15%;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.resource-right {
+  margin-left: auto;
+  margin-right: 15%;
+  width: fit-content;
+}
+
+.resource-description {
+  width: 756px;
+  text-align: center;
+}
+
+.resource-description .source {
+  font-size: 12px;
+  color: var(--dark-gray);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.resource-description .title {
+  font-size: 20px;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.resource-description .author {
+  font-size: 12px;
+  color: var(--dark-gray);
+}
+
+footer a {
+  display: block;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 83px;
+  text-decoration: none;
+  color: var(--dark-gray);
+  cursor: default;
+  font-size: 20px;
+}
+
+footer a:hover {
+  color: #4d4d4d;
+  cursor: default;
+}
+
+footer p {
+  font-size: 10px;
+  color: var(--dark-gray);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+main img:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
